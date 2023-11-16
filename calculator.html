@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <script src="https://kit.fontawesome.com/702a669f9c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="calc-body">
+    <div class="display">
+      <!-- <div class="exp">EXPRESSION</div> -->
+    <div class="value" id="result"></div>
+    </div>
+    <div id="buttons">
+      <button onclick="Run('1')">1</button>
+      <button onclick="Run('2')">2</button>
+      <button onclick="Run('3')">3</button>
+      <button class="buts-ac" id="ac">AC</button>
+      <button onclick="Run('4')">4</button>
+      <button onclick="Run('5')">5</button>
+      <button onclick="Run('6')">6</button>
+      <button onclick="Run('+')"><i class="fa-solid fa-plus"></i></button>
+      <button onclick="Run('7')">7</button>
+      <button onclick="Run('8')">8</button>
+      <button onclick="Run('9')">9</button>
+      <button onclick="Run('-')"><i class="fa-solid fa-minus"></i></button>
+      <button onclick="Run('*')"><i class="fa-solid fa-xmark"></i></button>
+      <button onclick="Run('0')">0</button>
+      <button onclick="Run('.')">.</button>
+      <button onclick="Run('/')"><i class="fa-solid fa-divide"></i></button>
+      <button onclick="calculateSquareRoot()"><i class="fa-solid fa-square-root-variable"></i></button>
+      <button onclick="calculateResult()" id="equals"><i class="fa-solid fa-equals"></i></button>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
